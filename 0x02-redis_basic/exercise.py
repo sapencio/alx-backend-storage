@@ -19,6 +19,7 @@ def count_calls(method: Callable) -> Callable:
         return method(self, *args, **kwargs)
     return invoker
 
+
 class Cache:
     '''Represents an object for storing data in a Redis data storage.
     '''
